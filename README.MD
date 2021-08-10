@@ -1,9 +1,8 @@
-# Guia-Git
+# Guia-Linux for dummies
 <p>  
-  <a href="https://jan-krueger.net/wordpress/wp-content/uploads/2007/09/git-cheat-sheet.pdf">
-    <img src="https://imgur.com/Yiu6JhT" title="Git Cheat Sheet" />
+  <a href>
+    <img src="https://i.imgur.com/Yiu6JhTl.jpg" title="Linux for Dummies" />
   </a>
 </p> 
 
- ## Créditos do Mapa
- - Jan Krüger https://jan-krueger.net/git-cheat-sheet-take-two
+
