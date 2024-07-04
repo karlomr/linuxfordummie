@@ -1,0 +1,28 @@
+publicar servico linux c#
+
+Crie um arquivo chamado caremobileapp.service em /etc/systemd/system/.
+
+conteudo do arquivo
+[Unit]
+Description=CareMobileApp Daemon
+After=network.target
+
+[Service]
+WorkingDirectory=/path/to/your/app
+ExecStart=/usr/bin/dotnet /path/to/your/app/CareMobileApp.dll
+Restart=always
+RestartSec=10
+SyslogIdentifier=caremobileapp
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target
+
+
+aplique permissoes
+sudo systemctl daemon-reload
+sudo systemctl enable caremobileapp.service
+sudo systemctl start caremobileapp.service
+
